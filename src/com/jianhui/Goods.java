@@ -1,10 +1,16 @@
 package com.jianhui;
 
 public class Goods {
+    public int currentCount = 0;
     public int finish(int count)
     {
-        count++;
+        currentCount = currentCount+count;
 
-        return  count;
+        return  currentCount;
+    }
+
+    public void MulQuantity(int quantity){
+        currentCount = currentCount- quantity;
+
     }
 }
