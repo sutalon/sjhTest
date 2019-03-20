@@ -1,7 +1,7 @@
 package com.jianhui;
 
 public class Goods {
-    public int currentCount = 0;
+    private int currentCount = 0;
     public int finish(int count)
     {
         currentCount = currentCount+count;
@@ -11,6 +11,6 @@ public class Goods {
 
     public void MulQuantity(int quantity){
         currentCount = currentCount- quantity;
-
+        System.out.println("hello,my wife");
     }
 }
